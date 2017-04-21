@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/mimidoan/last-ditch/issues"
   },
-  "homepage": "https://github.com/mimidoan/last-ditch#readme"
+  "homepage": "https://github.com/mimidoan/last-ditch#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1",
+    "mustache": "^2.3.0"
+  }
 }

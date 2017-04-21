@@ -1,8 +1,31 @@
-var express = require('express')
-var app = express()
+// import express & other dependencies
+let express = require('express');
+let app = express();
+
+
+// mustache like express is a dependency that you have to pull into your project
+let mustache = require('mustache-express');
+
+// block header from containing information about server for security
+app.disable('x-powered-by')
+
+
+// html --> telling express app that all html files should be handled by mustache templating engine, mustache declared in previous line
+app.engine('html', mustache());
+app.set('view engine', 'mustache');
+
+// refers to project folder
+app.set('views', __dirname +'/views');
+app.use('/assets', express.static('assets'));
+
+let hello_data = {
+
+  name: "Mimi"
+
+};
 
 app.get('/', function (req, res) {
-  res.send('Hello World!')
+  res.render("index.html", hello_data);
 })
 
 app.listen(3000, function () {
