@@ -1,3 +1,15 @@
+body {
+ background-color: black;
+}
+
+.center {
+  position: absolute;
+  top: 40%;
+  left:50%;
+  transform: translate(-50%,-50%);
+
+}
+
 .btn-circle {
   width: 30px;
   height: 30px;
@@ -22,6 +34,9 @@
   font-size: 50px;
   line-height: 1.33;
   border-radius: 175px;
-
-
 }
+ .head {
+   color: white;
+   padding: 20px;
+   text-shadow: 5px 5px 30px rgba(650,225,225,.95);
+ }

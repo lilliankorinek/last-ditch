@@ -28,6 +28,27 @@ app.get('/', function (req, res) {
   res.render("index.html", hello_data);
 })
 
+app.get('/activate', function (req, res)
+{
+    res.render('activate.html');
+});
+
+app.get('/confirmation', function (req, res)
+{
+    res.render('confirmation.html');
+});
+
+app.get('/contacts', function (req, res)
+{
+    res.render('contacts.html');
+});
+
+app.get('/panic', function (req, res)
+{
+    res.render('panic.html');
+});
+
+
 app.listen(3000, function () {
   console.log('Example app listening on port 3000!')
 })
