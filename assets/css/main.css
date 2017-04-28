@@ -10,6 +10,10 @@ body {
 
 }
 
+#doubleTap {
+    background: red;
+}
+
 .btn-circle {
   width: 30px;
   height: 30px;

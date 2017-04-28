@@ -18,7 +18,9 @@
   "homepage": "https://github.com/mimidoan/last-ditch#readme",
   "dependencies": {
     "bootstrap": "^3.3.7",
+    "express": "^4.15.2",
     "jquery": "^3.2.1",
-    "mustache": "^2.3.0"
+    "mustache": "^2.3.0",
+    "mustache-express": "^1.2.4"
   }
 }
