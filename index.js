@@ -2,6 +2,10 @@
 let express = require('express');
 let app = express();
 
+// ProgressBar dependency
+// var ProgressBar = require('progressbar.js')
+// var line = new ProgressBar.Line('#container');
+
 
 // mustache like express is a dependency that you have to pull into your project
 let mustache = require('mustache-express');

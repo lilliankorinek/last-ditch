@@ -10,6 +10,20 @@ body {
 
 }
 
+.top {
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.container {
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+#doubleTap {
+    background: red;
+}
+
 .btn-circle {
   width: 30px;
   height: 30px;
@@ -38,5 +52,6 @@ body {
  .head {
    color: white;
    padding: 20px;
+   margin: 10px;
    text-shadow: 5px 5px 30px rgba(650,225,225,.95);
  }
