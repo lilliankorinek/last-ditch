@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Please submit the emergency contact information for Contact 1.</title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Activate</title>
+    <!-- // <link rel="icon" type="image/gif" href="assets/images/" /> -->
+      <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="assets/css/main.css">
+      <link rel="stylesheet" href="assets/css/form.css">
+</head>
+<body>
+
+<div class="container">
+    <form class="register-form">
+        <div class="form-group row">
+          <div class="col-md-4 col-md-offset-4">
+          <label for="contactOne">Contact One</label>
+          <input type="text" name="name" id="name">Name
+		  <input type="number" name="number" id="number">Number
+		  <input type="text" name="email" id="email">Email
+           <!--<input name="one_name" class="form-control" type="text" placeholder="name">
+           <input name="one_phone" class="form-control" type="text" placeholder="phone"> -->
+         </div>
+      </div>
+
+
+<a href="#" onclick="addData()">Add data</a>
+<table id="myTable">
+	<tbody>
+		<tr>
+			<th>Name</th>
+			<th>Number</th>
+			<th>Email</th>
+		</tr>
+	</tbody>
+</table>
+
+<script type="text/javascript">
+	function addData(){
+		//grab the value property from our name and number elements which we got by id
+		var name = document.getElementById('name').value;
+		var number = document.getElementById('number').value; 
+		var email = document.getElementById('email').value;
+		// grab my table so i can add data to it later with append child
+		var myTable = document.getElementById('myTable');
+		
+		// create an empty row
+		var tr = document.createElement('TR');
+		//create 2 empty table cells (td)
+		var tdName = document.createElement('TD');
+		var tdNum = document.createElement('TD');
+		var tdEmail = document.createElement('TD');
+
+		// add some inner html to our tds
+		tdName.innerHTML = name;
+		tdNum.innerHTML = number;
+		tdEmail.innerHTML = email;
+
+		//starting at the yougest child append up
+		tr.appendChild(tdName);
+		tr.appendChild(tdNum);
+		tr.appendChild(tdEmail);
+		myTable.appendChild(tr);
+
+
+
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+/*
+.register-form{
+
+   left: 50%;
+    top: 50%;
+
+}*/
+.register-form label{
+    color: aliceblue;
+
+}
+.register-form input{
+    margin-bottom: 5px;
+    height: 40px;
+}
+
+.register-form textarea{
+    margin-bottom: 5px;
+    height: 70px;
+}
+
+.container {
+  overflow: scroll;
+}
